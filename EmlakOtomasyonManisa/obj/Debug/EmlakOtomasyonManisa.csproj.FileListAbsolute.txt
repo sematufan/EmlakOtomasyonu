@@ -1,0 +1,35 @@
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\bin\Debug\EmlakOtomasyonManisa.exe.config
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\bin\Debug\EmlakOtomasyonManisa.exe
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\bin\Debug\EmlakOtomasyonManisa.pdb
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\bin\Debug\EntityFramework.dll
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\bin\Debug\EntityFramework.xml
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.cariEkleDüzenle.resources
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.carileriGoruntule.resources
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.ContainerForm.resources
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.evEkleDuzenle.resources
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.login.resources
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.Properties.Resources.resources
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.csproj.GenerateResource.Cache
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.exe
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.pdb
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.csprojResolveAssemblyReference.cache
+C:\Users\Yusa\Documents\Visual Studio 2015\Projects\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.EvleriGoruntule.resources
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\bin\Debug\EmlakOtomasyonManisa.exe.config
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.exe
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.pdb
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\bin\Debug\EmlakOtomasyonManisa.exe
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\bin\Debug\EmlakOtomasyonManisa.pdb
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\bin\Debug\EntityFramework.dll
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\bin\Debug\EntityFramework.xml
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.csprojResolveAssemblyReference.cache
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.cariEkleDüzenle.resources
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.carileriGoruntule.resources
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.ContainerForm.resources
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.evEkleDuzenle.resources
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.EvleriGoruntule.resources
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.login.resources
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.Properties.Resources.resources
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyonuManisaDB\EmlakOtomasyonManisa\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.csproj.GenerateResource.Cache
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyon\EmlakOtomasyonManisa\bin\Debug\EmlakOtomasyonManisa.exe.config
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyon\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.exe
+C:\Users\Sema-Seda\Desktop\EmlakOtomasyon\EmlakOtomasyonManisa\obj\Debug\EmlakOtomasyonManisa.pdb

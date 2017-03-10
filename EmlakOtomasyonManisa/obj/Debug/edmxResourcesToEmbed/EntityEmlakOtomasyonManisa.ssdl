@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmlakOtomasyonuManisaDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="cariler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="soyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="cinsiyet" Type="nvarchar" MaxLength="10" />
+    <Property Name="yas" Type="int" />
+    <Property Name="adres" Type="nvarchar" MaxLength="250" />
+    <Property Name="tel1" Type="nvarchar" MaxLength="50" />
+    <Property Name="tel2" Type="nvarchar" MaxLength="50" />
+    <Property Name="cariNotu" Type="nvarchar" MaxLength="350" />
+    <Property Name="resim1" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="evler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="emlakTipi" Type="nvarchar" MaxLength="20" />
+    <Property Name="alan" Type="int" />
+    <Property Name="odaSayisi" Type="nvarchar" MaxLength="20" />
+    <Property Name="binaYasi" Type="int" />
+    <Property Name="binaKatSayisi" Type="int" />
+    <Property Name="bulunduguKat" Type="int" />
+    <Property Name="daireKacKatli" Type="int" />
+    <Property Name="isitma" Type="nvarchar" MaxLength="50" />
+    <Property Name="banyoSayisi" Type="int" />
+    <Property Name="esyalı" Type="nvarchar" MaxLength="20" />
+    <Property Name="siteIcerisinde" Type="nvarchar" MaxLength="10" />
+    <Property Name="aidat" Type="int" />
+    <Property Name="fiyat" Type="int" />
+    <Property Name="ilanLinki" Type="nvarchar" MaxLength="250" />
+    <Property Name="adres" Type="nvarchar" MaxLength="250" />
+    <Property Name="daireNotu" Type="nvarchar" MaxLength="500" />
+    <Property Name="evSahibiCariID" Type="int" />
+    <Property Name="eviKiralayanCariID" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userName" Type="nvarchar" MaxLength="50" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_evler_cariler">
+    <End Role="cariler" Type="Self.cariler" Multiplicity="0..1" />
+    <End Role="evler" Type="Self.evler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cariler">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="evler">
+        <PropertyRef Name="evSahibiCariID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_evler_cariler1">
+    <End Role="cariler" Type="Self.cariler" Multiplicity="0..1" />
+    <End Role="evler" Type="Self.evler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cariler">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="evler">
+        <PropertyRef Name="eviKiralayanCariID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EmlakOtomasyonuManisaDBModelStoreContainer">
+    <EntitySet Name="cariler" EntityType="Self.cariler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="evler" EntityType="Self.evler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_evler_cariler" Association="Self.FK_evler_cariler">
+      <End Role="cariler" EntitySet="cariler" />
+      <End Role="evler" EntitySet="evler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_evler_cariler1" Association="Self.FK_evler_cariler1">
+      <End Role="cariler" EntitySet="cariler" />
+      <End Role="evler" EntitySet="evler" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

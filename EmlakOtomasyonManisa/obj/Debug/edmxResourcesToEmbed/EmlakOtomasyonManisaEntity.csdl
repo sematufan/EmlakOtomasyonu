@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmlakOtomasyonuManisaDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="cariler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cinsiyet" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="yas" Type="Int32" />
+    <Property Name="adres" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="tel1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tel2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cariNotu" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="resim1" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="evler" Relationship="Self.FK_evler_cariler" FromRole="cariler" ToRole="evler" />
+  </EntityType>
+  <EntityType Name="evler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="emlakTipi" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="alan" Type="Int32" />
+    <Property Name="odaSayisi" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="binaYasi" Type="Int32" />
+    <Property Name="binaKatSayisi" Type="Int32" />
+    <Property Name="bulunduguKat" Type="Int32" />
+    <Property Name="daireKacKatli" Type="Int32" />
+    <Property Name="isitma" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="banyoSayisi" Type="Int32" />
+    <Property Name="esyalı" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="siteIcerisinde" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="aidat" Type="Int32" />
+    <Property Name="fiyat" Type="Int32" />
+    <Property Name="ilanLinki" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="adres" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="daireNotu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="evSahibiCariID" Type="Int32" />
+    <NavigationProperty Name="cariler" Relationship="Self.FK_evler_cariler" FromRole="evler" ToRole="cariler" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_evler_cariler">
+    <End Role="cariler" Type="Self.cariler" Multiplicity="0..1" />
+    <End Role="evler" Type="Self.evler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cariler">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="evler">
+        <PropertyRef Name="evSahibiCariID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EmlakOtomasyonManisaEntity" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="cariler" EntityType="Self.cariler" />
+    <EntitySet Name="evler" EntityType="Self.evler" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="users" EntityType="Self.users" />
+    <AssociationSet Name="FK_evler_cariler" Association="Self.FK_evler_cariler">
+      <End Role="cariler" EntitySet="cariler" />
+      <End Role="evler" EntitySet="evler" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
