@@ -17,6 +17,10 @@ namespace EmlakOtomasyonManisa
             InitializeComponent();
         }
         ///yuşaaaaaaaaa
+        ///öjhvljhvlhjv
+        /////jkblkj bkjçl
+        //jnlkjnblkj
+
         private void ContainerForm_Load(object sender, EventArgs e)
         {
             List<users> ilkFormAcilisYavasOlmasınDiye = ctx.users.ToList();
